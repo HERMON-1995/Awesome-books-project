@@ -66,3 +66,22 @@ html {
     border-radius: 5px;
     background-color: darkkhaki;
 }
+
+#book-form {
+    align-self: center;
+}
+
+.h2-add {
+    text-align: center;
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#title, #author{
+    padding: 5px;
+    height: 20px;
+}
+
+.book-form .btn {
+
+}
