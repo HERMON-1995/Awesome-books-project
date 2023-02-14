@@ -14,6 +14,43 @@ body {
   background-color: azure;
 }
 
+.nav {
+  height: 60px;
+  background-color: burlywood;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 80px;
+  padding-right: 80px;
+  border: 2px solid bisque;
+  margin: 0px 0px;
+}
+
+.nav p {
+    font-size: 23px;
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-ul li a {
+    margin-left: 40px;
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color: black;
+    border-left: 2px solid black;
+    padding-left: 20px;
+}
+
+.nav-ul li a:hover {
+    color: brown;
+}
+
 .container {
   background-color: white;
   border: 3px solid black;
@@ -24,6 +61,7 @@ body {
 }
 
 .h1-all {
+  font-size: 40px;
   text-align: center;
   font-weight: 100;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -69,6 +107,7 @@ body {
   display: block;
   align-self: center;
   border: 1px solid darkkhaki;
+  margin-top: 5px;
   margin-bottom: 20px;
   width: 110px;
   height: 3px;
@@ -83,6 +122,7 @@ body {
 }
 
 .h2-add {
+  font-size: 40px;
   text-align: center;
   font-weight: 100;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -90,8 +130,11 @@ body {
 
 #title,
 #author {
+  width: 500px;
+  border-color: cornsilk;
   padding: 5px;
   height: 20px;
+  margin-bottom: 30px;
 }
 
 #book-form .btn {
@@ -105,3 +148,40 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   cursor: pointer;
 }
+
+.h3-contact {
+    align-self: center;
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.ul-contact {
+   align-self: center;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.ul-contact li {
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.ul-contact li span{
+    color:brown;
+}
+
+footer {
+    background-color: brown;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid bisque;
+    margin: 10px 0px;
+    color: white;
+    font-size: 14px;
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
