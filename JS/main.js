@@ -46,16 +46,16 @@ class UI {
 
   static addBookToList(book) {
     const list = document.getElementById('book-list');
-    const ul = document.createElement('ul');
+    const div = document.createElement('div');
 
-    ul.innerHTML = `
+    div.innerHTML = `
          <div class="book">
            <p>"${book.title}" by ${book.author}</p>
            <button onclick="Store.removeBook(${book.id})" class="btn delete">Remove</button>
           </div>
         `;
 
-    list.appendChild(ul);
+    list.appendChild(div);
   }
 
   static deleteBook(elem) {
