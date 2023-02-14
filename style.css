@@ -8,11 +8,16 @@ html {
     margin: 0px;
 }
 
+body {
+    background-color:azure;
+}
+
 .container {
-    border: 3px solid burlywood;
+    background-color: white;
+    border: 3px solid black;
     display: flex;
     flex-direction: column;
-    margin: 50px;
+    margin: 80px 250px;
     padding: 10px;
 }
 
@@ -36,11 +41,12 @@ html {
     align-items: center;
     background-color: cornsilk;
     padding: 10px;
-    border-bottom: 2px solid burlywood;
+    border-bottom: 8px solid white;
 }
 
 .book p {
-    font-size: 22px;
+    margin-left: 10px;
+    font-size: 20px;
     font-weight: 100;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -54,6 +60,7 @@ html {
     font-weight: 100;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-color: red;
+    cursor: pointer;
 }
 
 .line {
@@ -68,6 +75,8 @@ html {
 }
 
 #book-form {
+    display: flex;
+    flex-direction: column;
     align-self: center;
 }
 
@@ -82,6 +91,14 @@ html {
     height: 20px;
 }
 
-.book-form .btn {
-
+#book-form .btn {
+    background-color: rgb(97, 229, 97);
+    color: black;
+    border-color:aquamarine;
+    width: 40px;
+    height: 25px;
+    align-self: self-end;
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
 }
