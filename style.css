@@ -1,1 +1,107 @@
-/* No style was used! */
+html {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: azure;
+}
+
+.container {
+  background-color: white;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  margin: 80px 250px;
+  padding: 10px;
+}
+
+.h1-all {
+  text-align: center;
+  font-weight: 100;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#book-list {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.book {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: cornsilk;
+  padding: 10px;
+  border-bottom: 8px solid azure;
+}
+
+.book p {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.book .btn {
+  margin-right: 20px;
+  height: 25px;
+  width: 80px;
+  background-color: red;
+  color: white;
+  font-weight: 100;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-color: red;
+  cursor: pointer;
+}
+
+.line {
+  display: block;
+  align-self: center;
+  border: 1px solid darkkhaki;
+  margin-bottom: 20px;
+  width: 110px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: darkkhaki;
+}
+
+#book-form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.h2-add {
+  text-align: center;
+  font-weight: 100;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#title,
+#author {
+  padding: 5px;
+  height: 20px;
+}
+
+#book-form .btn {
+  background-color: rgb(97, 229, 97);
+  color: black;
+  border-color: aquamarine;
+  width: 40px;
+  height: 25px;
+  align-self: self-end;
+  font-weight: 100;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;
+}

@@ -49,10 +49,10 @@ class UI {
     const ul = document.createElement('ul');
 
     ul.innerHTML = `
-        <hr>
-           <li>${book.title}</li>
-           <li>${book.author}</li><br>
+         <div class="book">
+           <p>"${book.title}" by ${book.author}</p>
            <button onclick="Store.removeBook(${book.id})" class="btn delete">Remove</button>
+          </div>
         `;
 
     list.appendChild(ul);

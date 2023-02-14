@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Awesome Books list</title>
 </head>
 <body>
     <div class="container">
-        <h1 class="h1-text">Awesome books</h1>
+        <h1 class="h1-all">All awesome books</h1>
     <div id="book-list">
         
-    </div><hr><br>
+    </div><br>
+    <span class="line"></span>
+    <h2 class="h2-add">Add a new book</h2><br>
     <form id="book-form">
           <div class="form-group">
             <input type="text" id="title" placeholder="Title" required>
@@ -19,7 +22,7 @@
           <div class="form-group">
             <input type="text" id="author" placeholder="Author" required>
           </div><br>
-          <input class="btn" type="submit" value="Add">
+          <input class="btn bt-add" type="submit" value="Add">
     </form>
 </div>
 <script src="./JS/main.js"></script>
