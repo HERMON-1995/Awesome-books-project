@@ -1,41 +1,10 @@
-/* eslint-disable */
+/* eslint-disable max-classes-per-file */
+
 class Book {
   constructor(title, author, id) {
     this.title = title;
     this.author = author;
     this.id = id;
-  }
-}
-
-class UI {
-  static displayBooks() {
-    const books = Store.getBooks();
-    books.forEach((book) => UI.addBookToList(book));
-  }
-
-  static addBookToList(book) {
-    const list = document.getElementById('book-list');
-    const ul = document.createElement('ul');
-
-    ul.innerHTML = `
-        <hr>
-           <li>${book.title}</li>
-           <li>${book.author}</li><br>
-           <button onclick="Store.removeBook(${book.id})" class="btn delete">Remove</button>
-        `;
-
-    list.appendChild(ul);
-  }
-
-  static deleteBook(elem) {
-    if (elem.classList.contains('delete')) {
-      elem.parentElement.remove();
-    }
-  }
-
-  static clearFields() {
-    document.querySelector('#title').value = '';
-    document.querySelector('#author').value = '';
   }
 }
 
@@ -65,6 +34,39 @@ class Store {
       }
     });
     localStorage.setItem('books', JSON.stringify(books));
+  }
+}
+
+// UI class
+class UI {
+  static displayBooks() {
+    const books = Store.getBooks();
+    books.forEach((book) => UI.addBookToList(book));
+  }
+
+  static addBookToList(book) {
+    const list = document.getElementById('book-list');
+    const ul = document.createElement('ul');
+
+    ul.innerHTML = `
+        <hr>
+           <li>${book.title}</li>
+           <li>${book.author}</li><br>
+           <button onclick="Store.removeBook(${book.id})" class="btn delete">Remove</button>
+        `;
+
+    list.appendChild(ul);
+  }
+
+  static deleteBook(elem) {
+    if (elem.classList.contains('delete')) {
+      elem.parentElement.remove();
+    }
+  }
+
+  static clearFields() {
+    document.querySelector('#title').value = '';
+    document.querySelector('#author').value = '';
   }
 }
 
