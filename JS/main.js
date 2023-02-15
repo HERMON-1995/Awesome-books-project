@@ -105,7 +105,7 @@ const allBooks = document.getElementById('all-books');
 const addBook = document.getElementById('add-book');
 const contactCont = document.getElementById('contact-cont');
 
-// Displaying and hidding sections
+// Display and hide sections
 list.addEventListener('click', () => {
   list.style.color = 'brown';
   addNew.style.color = 'black';
