@@ -125,3 +125,13 @@ addNew.addEventListener('click', () => {
   addBook.style.display = 'flex';
   contactCont.style.display = 'none';
 });
+
+contact.addEventListener('click', () => {
+  list.style.color = 'black';
+  addNew.style.color = 'black';
+  contact.style.color = 'brown';
+
+  allBooks.style.display = 'none';
+  addBook.style.display = 'none';
+  contactCont.style.display = 'flex';
+});
