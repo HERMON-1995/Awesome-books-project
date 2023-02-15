@@ -46,16 +46,16 @@ class UI {
 
   static addBookToList(book) {
     const list = document.getElementById('book-list');
-    const ul = document.createElement('ul');
+    const div = document.createElement('div');
 
-    ul.innerHTML = `
+    div.innerHTML = `
          <div class="book">
            <p>"${book.title}" by ${book.author}</p>
            <button onclick="Store.removeBook(${book.id})" class="btn delete">Remove</button>
           </div>
         `;
 
-    list.appendChild(ul);
+    list.appendChild(div);
   }
 
   static deleteBook(elem) {
@@ -95,4 +95,43 @@ document.getElementById('book-form').addEventListener('submit', (e) => {
 // Event: Remove a Book from UI
 document.querySelector('#book-list').addEventListener('click', (e) => {
   UI.deleteBook(e.target);
+});
+
+const list = document.querySelector('.list');
+const addNew = document.querySelector('.add-new');
+const contact = document.querySelector('.contact');
+
+const allBooks = document.getElementById('all-books');
+const addBook = document.getElementById('add-book');
+const contactCont = document.getElementById('contact-cont');
+
+// Display and hide sections
+list.addEventListener('click', () => {
+  list.style.color = 'brown';
+  addNew.style.color = 'black';
+  contact.style.color = 'black';
+
+  allBooks.style.display = 'flex';
+  addBook.style.display = 'none';
+  contactCont.style.display = 'none';
+});
+
+addNew.addEventListener('click', () => {
+  list.style.color = 'black';
+  addNew.style.color = 'brown';
+  contact.style.color = 'black';
+
+  allBooks.style.display = 'none';
+  addBook.style.display = 'flex';
+  contactCont.style.display = 'none';
+});
+
+contact.addEventListener('click', () => {
+  list.style.color = 'black';
+  addNew.style.color = 'black';
+  contact.style.color = 'brown';
+
+  allBooks.style.display = 'none';
+  addBook.style.display = 'none';
+  contactCont.style.display = 'flex';
 });
