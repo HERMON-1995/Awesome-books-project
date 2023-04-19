@@ -1,4 +1,4 @@
-# Awesome-books-project
+# Awesome books project
 
 <a name="readme-top"></a>
 
@@ -27,27 +27,20 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Awesome-books-project] <a name="about-project"></a>
+# 📖 [Awesome books project] <a name="about-project"></a>
 
-**[Awesome-books-project]** is all about building simple website for adding and removing books from store using only plain HTML and JavaScript.
+**[Awesome books project]** is web application that displays a list of books and allows users to add and remove books from that list.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-Client
-
-Key Features
-
-**[Awesome-books-branch]**
-**[Refactor-class-branch]**
-**[Complete-website-branch]**
-
-
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://html.com/">HTML</a></li>
+    <li><a href="https://www.w3.org/Style/CSS/">CSS</a></li>
+    <li><a href="https://www.javascript.com/">JavaScript</a></li>
   </ul>
 </details>
 
@@ -55,7 +48,8 @@ Key Features
 
 ### Key Features <a name="key-features"></a>
 
-- **[Awesome-books-branch]**
+- **[Add books]**
+- **[Remove books]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -63,7 +57,7 @@ Key Features
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- See live here : ().
+- [See live here](https://space-travelers-hub-3yrr.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -76,27 +70,41 @@ Key Features
 In order to run this project you need:
 
 ```sh
- to use Git, GitHub and linters.
- vs code
+setup Linters
 ```
 
 ### Setup
 
-Clone this repository to your desired folder: (https://github.com/HERMON-1995/Awesome-books-project/tree/Awesome-books-branch)
+Clone this repository to your desired folder:
 
 ```sh
-  cd my-folder
-  git clone git@github.com:HERMON-1995/HTML-CSS-JavaScript-capstone-project.git
+  cd Awesome-books-project
+  git clone https://github.com/HERMON-1995/Awesome-books-project.git
 ```
 ### Install
-
-### Usage
-
+ 
+ ```sh
+ cd Awesome-books-project
+ ```
+ ```sh
+ npm install
+ ```
+ 
 ### Run tests
+
+```sh
+npx hint .
+```
+```sh
+npx stylelint "**/*.{css,scss}"
+```
+```sh
+npx eslint .
+```
 
 ### Deployment
 
-- (Deployment method using GitHub pages)
+- (Deployment method using github pages)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -118,7 +126,7 @@ Clone this repository to your desired folder: (https://github.com/HERMON-1995/Aw
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-    #[New-pages-branch]
+    #[Buy books]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -126,7 +134,7 @@ Clone this repository to your desired folder: (https://github.com/HERMON-1995/Aw
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Contributions, issues, and feature requests are welcome!
+- [Issues](https://github.com/HERMON-1995/Awesome-books-project/issues?q=is%3Aissue+is%3Aclosed)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -134,7 +142,7 @@ Contributions, issues, and feature requests are welcome!
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project please show support.
+If you like this project please show support by staring ⭐️.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -142,7 +150,7 @@ If you like this project please show support.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-* I would like to give Microverse my sincerest gratitude for accommodating me in the Full-time Software Development program.
+* we would like to give Microverse our sincerest gratitude for accommodating us in the Full-time Software Development program.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
